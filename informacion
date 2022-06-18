@@ -1,0 +1,15 @@
+Comandos a tener en cuenta:
+Para saber informacion esencial del usuario:
+aws sts get-caller-identity
+Para configurar el perfil del aws con el host:
+aws configure
+
+Muestra las instancias en uso:
+aws ec2 describe-instances --profile ipnotics
+
+
+Para verificar las acciones del tf:
+Terraform plan
+
+Y para aplicar el archivo de configuracion.tf:
+terraform apply "Desde la ruta de donde se encunetre el archivo"
