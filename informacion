@@ -13,3 +13,11 @@ Terraform plan
 
 Y para aplicar el archivo de configuracion.tf:
 terraform apply "Desde la ruta de donde se encunetre el archivo"
+
+
+Par utilizar una varaible en la antigua ersion se utilizaba:
+x = ${var.cidr}
+En la nueva version se realiza como:
+x = var.cidr
+
+En los archivos con variables tendras que especificar los valores en el mismo archivo o tendras que mostrartlos en un archivos diferente con el "formato.tf"
