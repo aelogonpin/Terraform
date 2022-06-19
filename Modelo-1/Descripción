@@ -1,0 +1,1 @@
+Este modelo lo que nos permite es poder crear nuestro primer terraform con aws y añadir un vpc con personalizacion basica y algun que otro variable para no hardcodear nuestro codigo.
