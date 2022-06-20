@@ -1,0 +1,6 @@
+Esto permite importa un modelo creado de un ami desde la id de instancia alajada de cualquier usuario
+se aplica mediantes este comando:
+terraform import aws_instance.server2 i-095aa33b350a52adb
+aws_instance: Nombre del resource
+server2: Nombre del servicio al que se le aplica 
+i-095aa33b350a52adb: Id de la estancia de la ami que queremos copiar
