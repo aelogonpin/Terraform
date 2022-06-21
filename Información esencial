@@ -1,0 +1,3 @@
+En el caso de que querramos crear un terraform init tendremos que crear una nueva carpeta con solo los
+archivos .tf ya que si hacemos cosas sobbrecribiendo lo anterior modificara lo anterior sin atender a lo nuevo por eso:
+COPIAR SOLO LOS FICHEROS DE CONFIGUACION EN EL CASO DE UN NUEVO MODELO.
