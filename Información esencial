@@ -1,3 +1,33 @@
 En el caso de que querramos crear un terraform init tendremos que crear una nueva carpeta con solo los
 archivos .tf ya que si hacemos cosas sobbrecribiendo lo anterior modificara lo anterior sin atender a lo nuevo por eso:
 COPIAR SOLO LOS FICHEROS DE CONFIGUACION EN EL CASO DE UN NUEVO MODELO.
+
+
+
+
+
+Hola, al hacer el primer apply me da el siguiente error:
+
+Error: Error applying plan:
+
+1 error(s) occurred:
+
+* aws_launch_configuration.web-server: 1 error(s) occurred:
+
+* aws_launch_configuration.web-server: Error creating launch configuration: ValidationError: The key pair 'openwebinars' does not exist
+        status code: 400,
+
+
+ 1
+
+
+!!!!!!Desde el interface de AWS, he ido a la consola Ec2 -> network & security -> key pairs
+y he creado un nuevo key pair, llamado openwebinars.
+No se si esto es correcto o habría que crearlo desde el Terraform.¡¡¡¡¡¡
+
+La key pair no se puede crear desde terraform. Es obligatorio hacerlo manual.
+
+
+
+
+Terraform destroy: Para poder eleimiar todo el proyecto de donde se ubique 
